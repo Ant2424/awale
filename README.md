@@ -1,2 +1,2 @@
 # awale
-GameOfCIR CIR2 test
+GameOfCIR CIR2 test2
