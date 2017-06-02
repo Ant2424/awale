@@ -9,4 +9,4 @@ cd /var/www/html
 
 git clone https://github.com/Ant2424/awale.git
 
-git remote add origin https://github.com:Ant2424/awale.git
+git remote add origin https://github.com/Ant2424/awale.git
