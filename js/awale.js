@@ -68,8 +68,8 @@ function move(arg)
       else if( tour%2 != 0 && lig == 0)
       {
         point2 +=  parseInt(array[lig].cells[col].innerHTML) ;
-        score.innerHTML = point2;
-        array[lig].cells[col].innerHTML = 0
+        score.innerHTML = '<b>' + point2 + '</b>';
+        array[lig].cells[col].innerHTML = 0;
       }
     //  score.innerHTML  = score.innerHTML + array[lig].cells[col].innerHTML;
 
@@ -95,10 +95,5 @@ function move(arg)
 
     tour++;
   }
-  else
-   {
-
-  }
-
 
 }

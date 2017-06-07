@@ -3,29 +3,30 @@
     <meta charset="utf-8">
   	<title>Awale</title>
   	<link rel="stylesheet" type="text/css" href="css/awale.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="css/materialize.css"/>
   </head>
 
   <body>
     <p class="text-center" id="score1"><b>0</b></p>
-    <div class="container row">
+    <div class="container row" id="tableau">
       <table  class="responsive-table centered" id="plateau">
-        <tr>
-          <td id="00" onclick="move('00');">4</td>
-          <td id="01" onclick="move('01');">4</td>
-          <td id="02" onclick="move('02');">4</td>
-          <td id="03" onclick="move('03');">4</td>
-          <td id="04" onclick="move('04');">4</td>
-          <td id="05" onclick="move('05');">4</td>
+        <tr id="tr1">
+          <td id="00" class="blocj1" onclick="move('00');">4</td>
+          <td id="01" class="blocj1" onclick="move('01');">4</td>
+          <td id="02" class="blocj1" onclick="move('02');">4</td>
+          <td id="03" class="blocj1" onclick="move('03');">4</td>
+          <td id="04" class="blocj1" onclick="move('04');">4</td>
+          <td id="05" class="blocj1" onclick="move('05');">4</td>
         </tr>
-        <tr>
-          <td id="10" onclick="move('10');">4</td>
-          <td id="11" onclick="move('11');">4</td>
-          <td id="12" onclick="move('12');">4</td>
-          <td id="13" onclick="move('13');">4</td>
-          <td id="14" onclick="move('14');">4</td>
-          <td id="15" onclick="move('15');">4</td>
+        <tr id="tr2">
+          <td id="10" class="blocj2" onclick="move('10');">4</td>
+          <td id="11" class="blocj2" onclick="move('11');">4</td>
+          <td id="12" class="blocj2" onclick="move('12');">4</td>
+          <td id="13" class="blocj2" onclick="move('13');">4</td>
+          <td id="14" class="blocj2" onclick="move('14');">4</td>
+          <td id="15" class="blocj2" onclick="move('15');">4</td>
         </tr>
       </table>
     </div>
