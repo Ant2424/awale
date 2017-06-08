@@ -1,0 +1,62 @@
+.blocj2
+{
+
+ display: inline-block;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-left: 35px;
+
+
+}
+
+.blocj1
+{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 100%;
+  text-align: center;
+  width: 100px;
+  margin-left: 35px;
+  height: 100px;
+
+}
+
+#tr1
+{
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+  background-image: url('../imgs/chocapic.png');
+  border-radius: 30%;
+  height: 150px;
+
+/*  border: 1px solid black;*/
+}
+
+#tr2
+{
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+  background-image: url('../imgs/chocapic.png');
+  height: 150px;
+  border-radius: 30%;
+
+/*  border: 1px solid black;*/
+}
+
+.text-center
+{
+  width: 30px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#tableau
+{
+  /*height: 1000px;*/
+}
