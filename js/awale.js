@@ -12,6 +12,7 @@ function move(arg)
 
   var nb_pion = array[lig].cells[col].innerHTML;
 
+
   if ( ( (lig == 0 && tour%2 == 0) || (lig==1 && tour%2==1) ) && nb_pion != 0)
   {
     array[lig].cells[col].innerHTML = 0;
@@ -94,6 +95,90 @@ function move(arg)
     }
 
     tour++;
+
+
+  if(tour%2==0 && vide(0)==1)
+{
+  alert('Mouv impossible, au tour du joueur suivant !');
+  tour++;
+  document.getElementById('tour').innerHTML = tour;
+
+  return 0 ;
+}
+
+ if(tour%2==1 && vide(1)==1)
+{
+  alert('Mouv impossible, au tour du joueur suivant !');
+  tour++;
+  document.getElementById('tour').innerHTML = tour;
+
+  return 0;
+}
+ 
   }
+      document.getElementById('tour').innerHTML = tour;
+
+return 0;
+}
+
+function vide(lig)
+{
+ 
+  var verif=1;
+
+      for (var i = 0; i < 6 ; i++)
+        {
+
+          if (parseInt(array[lig].cells[i].innerHTML)!=0)
+          {
+              
+              verif = 0;
+          }
+        }
+          return verif;
+
+}
+
+function victoire()
+{
+//  var verifj1 = 0;
+  // var verifj2 = 0;
+   /* if(j==0)
+                verifj1 = 1;
+                if (j==1) 
+                verifj2 =1;*/
+    /*   if (verif==0) 
+        {
+
+            var fin = document.createElement('h1');
+            fin.innerHTML = "Le joueur 2 a gagne !";
+           .... appendChild(fin);
+            initialisation();
+        }*/
+
+        /*  var resultat;
+          if (verifj1==0) resultat=0;
+          if (verifj2==0) resultat=1;
+          if (verifj1!=0 && verifj2!=0) resultat=-1;
+          return resultat;*/
+
+}
+
+function initialisation()
+{
+    document.getElementById('00').innerHTML = '4';
+    document.getElementById('01').innerHTML = '4';
+    document.getElementById('02').innerHTML = '4';
+    document.getElementById('03').innerHTML = '4';
+    document.getElementById('04').innerHTML = '4';
+    document.getElementById('05').innerHTML = '4';
+    document.getElementById('10').innerHTML = '4';
+    document.getElementById('11').innerHTML = '4';
+    document.getElementById('12').innerHTML = '4';
+    document.getElementById('13').innerHTML = '4';
+    document.getElementById('14').innerHTML = '4';
+    document.getElementById('15').innerHTML = '4';
+    document.getElementById('score1').innerHTML = '0';
+    document.getElementById('score2').innerHTML = '0';
 
 }
